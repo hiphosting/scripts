@@ -54,7 +54,7 @@ def send_post_request(url, application_name, username, password, extra):
                 response.status_code,
             )
 
-            if response.status_code == 200:
+            if response.ok:
                 success = True
                 print("Response Body:", response.text)
                 return
